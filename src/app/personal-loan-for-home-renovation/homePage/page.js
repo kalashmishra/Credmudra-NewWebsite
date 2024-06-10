@@ -1,6 +1,5 @@
 import { Container, Box, Typography, Button } from "@mui/material";
 import Image from "next/image";
-import HomeRenovation from "../../../../public/assest/homeRenovation/homeRenovation.svg";
 import chill from "../../../../public/assest/homeRenovation/chill.svg";
 import star from "../../../../public/assest/homeRenovation/star.svg";
 import icons_google from "../../../../public/assest/homeRenovation/icons_google.svg";
@@ -9,8 +8,9 @@ import CommonButton from "@/app/components/CommonButton";
 
 const HomePage = () => {
   return (
+   
     <Container
-      maxWidth="xl"
+      maxWidth="100%"
       disableGutters
       sx={{
         p: 0,
@@ -74,7 +74,7 @@ const HomePage = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-          // mt: { xs: -19,sm:0  }, 
+         
           gap: 2, 
         }}
       >
@@ -117,6 +117,7 @@ const HomePage = () => {
         </Typography>
       </Box>
     </Container>
+   
   );
 };
 

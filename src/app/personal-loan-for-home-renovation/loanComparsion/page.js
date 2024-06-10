@@ -57,12 +57,7 @@ const LoanComparison = () => {
         </Box>
       </Container>
       <Box
-        sx={{
-          // position: "absolute",
-          // top: "400%",
-          // left: "50%",
-          // transform: "translate(-50%, -50%)",
-        
+        sx={{ 
           textAlign: "center",
           width: "100%",
         }}

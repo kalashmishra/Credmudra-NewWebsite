@@ -11,7 +11,6 @@ const Animation = () => {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-
         repeat: Infinity,
         repeatType: "mirror",
       },

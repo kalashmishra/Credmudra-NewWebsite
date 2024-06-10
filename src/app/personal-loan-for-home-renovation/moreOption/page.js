@@ -26,7 +26,6 @@ const MoreOption = () => {
         sx={{
           textAlign: "center",
           mt: { xs: 5, sm: 3, md: 9 },
-        //   maxWidth: { xs: "250px", sm: "580px", md: "690px" },
           mx: "auto",
         }}
       >
@@ -40,8 +39,8 @@ const MoreOption = () => {
             fontWeight: 700,
           }}
         >
-         Dive into more with Credmudra  
-               </Typography>
+          Dive into more with Credmudra
+        </Typography>
         <Typography
           variant="body1"
           color="textSecondary"
@@ -96,7 +95,7 @@ const MoreOption = () => {
           <Grid item xs={6} sm={6} md={3.7} key={index}>
             <Paper
               sx={{
-                padding: {xs:2, sm:3},
+                padding: { xs: 2, sm: 3 },
                 borderRadius: 2,
                 textAlign: "center",
                 border: "none",
@@ -104,7 +103,13 @@ const MoreOption = () => {
               }}
               elevation={3}
             >
-              <Box sx={{width:{xs:'50%', sm:'30%', md:'25%'},marginX:'auto',pb:2}}>
+              <Box
+                sx={{
+                  width: { xs: "50%", sm: "30%", md: "25%" },
+                  marginX: "auto",
+                  pb: 2,
+                }}
+              >
                 {" "}
                 <Image
                   src={item.img}
@@ -120,7 +125,7 @@ const MoreOption = () => {
                 variant="body2"
                 sx={{
                   color: "rgba(52, 52, 53, 1)",
-                //   pb:2,
+                  //   pb:2,
                   fontSize: { xs: ".8rem", sm: ".8rem", md: ".9rem" },
                 }}
               >
@@ -130,20 +135,27 @@ const MoreOption = () => {
                 variant="body2"
                 sx={{
                   color: "rgba(52, 52, 53, 1)",
-                  pb:1,
+                  pb: 1,
                   fontSize: { xs: ".8rem", sm: ".8rem", md: ".9rem" },
                 }}
               >
                 {item.text2}
               </Typography>
-             
-              <Box sx={{mt:2}}>
-              <CommonButton font={{xs:'10px',sm:'14px',}} text={"Unlock Funds"} />
+
+              <Box sx={{ mt: 2 }}>
+                <CommonButton
+                  font={{ xs: "10px", sm: "14px" }}
+                  text={"Unlock Funds"}
+                />
               </Box>
               <Typography
                 variant="caption"
                 display="block"
-                sx={{ mt: 1, color: "rgba(52, 52, 53, 0.5) ",fontSize: { xs: ".65rem", sm: ".8rem", md: ".9rem" } }}
+                sx={{
+                  mt: 1,
+                  color: "rgba(52, 52, 53, 0.5) ",
+                  fontSize: { xs: ".65rem", sm: ".8rem", md: ".9rem" },
+                }}
               >
                 {item.amount}
               </Typography>
@@ -152,22 +164,9 @@ const MoreOption = () => {
         ))}
       </Grid>
 
-      {/* <Button
-        variant="contained"
-        sx={{
-          mt: 8,
-          backgroundColor: "#3653a9",
-          borderRadius: "8px",
-          textTransform: "none",
-        }}
-      >
-        Secure Future & Apply Now
-      </Button> */}
-      <Box sx={{mt:8}}>
-              <CommonButton text={" Explore More Credmudra"} />
-              </Box>
-              
-     
+      <Box sx={{ mt: 8 }}>
+        <CommonButton text={" Explore More Credmudra"} />
+      </Box>
     </Container>
   );
 };

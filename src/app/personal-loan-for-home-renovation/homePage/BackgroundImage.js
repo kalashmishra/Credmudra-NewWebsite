@@ -5,7 +5,7 @@ import Animation from "./animation/page";
 
 const BackgroundImage = ({ children }) => {
   return (
-    <Grid container>
+   
       <Box
         sx={{
           position: "relative",
@@ -32,7 +32,7 @@ const BackgroundImage = ({ children }) => {
           {children}
         </Box>
       </Box>
-    </Grid>
+   
   );
 };
 

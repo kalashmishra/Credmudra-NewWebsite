@@ -1,7 +1,6 @@
 import React from "react";
-import { Box, Container, Grid } from "@mui/material";
+import { Box,Grid } from "@mui/material";
 import Image from "next/image";
-
 import bgImage from "../../../../public/assest/homeRenovation/Rectangle.png";
 import bucket from "../../../../public/assest/homeRenovation/bucket.png";
 
@@ -19,7 +18,7 @@ const BackgroundImage = ({ children }) => {
         <Box
           sx={{
             width: "100%",
-            height: { xs: "75vh", sm: "130vh", md: "150vh" },
+            height: { xs: "75vh", sm: "130vh", md: "150vh",lg:'110vh' },
             zIndex: -1,
             position: "absolute",
             top: 0,
@@ -40,9 +39,9 @@ const BackgroundImage = ({ children }) => {
         <Box
           sx={{
             position: "absolute",
-            top: { xs: "-4%", sm: "-6%", md: "-6%" }, // adjust the top position as needed
-            left: { xs: "5%", sm: "5%", md: "5%" }, // adjust the left position as needed
-            width: { xs: "100px", sm: "120px", md: "150px" }, // adjust the width as needed
+            top: { xs: "-4%", sm: "-6%", md: "-6%" }, 
+            left: { xs: "5%", sm: "5%", md: "5%" }, 
+            width: { xs: "100px", sm: "120px", md: "150px" }, 
             height: "auto",
           }}
         >
@@ -50,8 +49,8 @@ const BackgroundImage = ({ children }) => {
             src={bucket}
             alt="Bucket Image"
             layout="responsive"
-            width={"100%"} // adjust the width as needed
-            height={"100%"} // adjust the height as needed
+            width={"100%"}
+            height={"100%"}
           />
         </Box>
 

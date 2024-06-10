@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Typography, Grid, Paper, Box } from "@mui/material";
-import vector from "../../../../public/assest/homeRenovation/vector.png";
+import vector from "../../../../public/assest/homeRenovation/Vector.png";
 import Ladder from "../../../../public/assest/homeRenovation/Ladder.png";
 import Image from "next/image";
 const HomeLoan = () => {

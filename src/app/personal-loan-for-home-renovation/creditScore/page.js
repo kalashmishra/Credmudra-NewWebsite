@@ -26,12 +26,19 @@ const CreditScoreCheck = () => {
   ];
 
   return (
+    <Box
+    sx={{
+      maxWidth: "100%",
+      bgcolor: "rgba(245, 245, 245, 1)",
+      // mt: 6,
+    }}
+  >
     <Container
       maxWidth="xl"
       sx={{
         minHeight: "100vh",
         textAlign: "center",
-        bgcolor: "rgba(245, 245, 245, 1)",
+       
         paddingTop: "5%",
         mt: { xs: 2, sm: 2, md: 2 },
       }}
@@ -158,6 +165,7 @@ const CreditScoreCheck = () => {
         <CommonButton text={"Check My Credit Score"} />
       </Box>
     </Container>
+    </Box>
   );
 };
 

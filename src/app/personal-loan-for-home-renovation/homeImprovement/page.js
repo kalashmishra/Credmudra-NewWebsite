@@ -37,7 +37,7 @@ const HomeImprovement = () => {
     <BackgroundImage>
       <Container
         maxWidth="lg"
-        sx={{ position: "relative", zIndex: 9, pt: { xs: 12, sm: 16, md: 20 } }}
+        sx={{ position: "relative", zIndex: 9, mt: { xs: 12, sm: 16, md: 20,lg:23 } }}
       >
         <Box
           sx={{

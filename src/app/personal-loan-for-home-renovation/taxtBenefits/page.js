@@ -5,11 +5,18 @@ import Image from 'next/image';
 import speaker from "../../../../public/assest/homeRenovation/speaker.png"
 const TaxBenefits = () => {
   return (
+    <Box
+    sx={{
+      maxWidth: "100%",
+      backgroundColor: '#E6EDFB',
+      // mt: 6,
+    }}
+  >
     <Container  maxWidth="xl"
    
       sx={{
         textAlign: 'center',
-        backgroundColor: '#E6EDFB',
+      
         // padding: '2rem 1rem',
         minHeight: '100vh',
         pt: { xs: 12, sm: 11, md: 12 },
@@ -100,6 +107,7 @@ const TaxBenefits = () => {
         />
       </Box>
     </Container>
+    </Box>
   );
 };
 
