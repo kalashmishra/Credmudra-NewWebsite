@@ -21,7 +21,8 @@ const KeyFeatures = () => {
         p: 0,
         position: "relative",
         zIndex: 9,
-        overflow:'hidden'
+        overflow:'hidden',
+        mt:5,
       }}
     >
       <Box

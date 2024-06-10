@@ -1,11 +1,12 @@
 import React from "react";
-import { Container, Grid, Paper, Typography, Box } from "@mui/material";
+import { Container, Grid, Typography, Box } from "@mui/material";
 import home from "../../../../public/assest/homeRenovation/home.png";
 import loan from "../../../../public/assest/homeRenovation/Loan.png";
 import Credit from "../../../../public/assest/homeRenovation/Credit.png";
 import PaperWork from "../../../../public/assest/homeRenovation/Paper work.png";
 import FianancialStability from "../../../../public/assest/homeRenovation/Fianancial Stability.png";
 import eligibilityBg from "../../../../public/assest/homeRenovation/eligibilityBg.png";
+import checks from "../../../../public/assest/homeRenovation/checks.png";
 import Image from "next/image";
 
 const criteria = [
@@ -47,12 +48,7 @@ const EligibilityCriteria = () => {
       }}
     >
       {" "}
-      <Container
-        maxWidth="lg"
-        sx={{
-    
-        }}
-      >
+      <Container maxWidth="lg" sx={{ position: "relative",}}>
         <Box
           sx={{
             position: "relative",
@@ -72,8 +68,8 @@ const EligibilityCriteria = () => {
             textAlign="center"
             sx={{
               color: "white",
-            //   maxWidth: { xs: "250px", sm: "580px", md: "700px" },
-            pt: { xs: 10, sm: 15, md: 9 },
+              //   maxWidth: { xs: "250px", sm: "580px", md: "700px" },
+              pt: { xs: 10, sm: 15, md: 9 },
               mx: "auto",
               textAlign: "center",
               paddingBottom: "0%",
@@ -183,7 +179,28 @@ const EligibilityCriteria = () => {
               </Grid>
             ))}
           </Grid>
+          <Box
+            sx={{
+              width: {xs:'40%',sm:'25%'},
+              height: { xs: "20vh", sm: "20vh", md: "30vh" },
+              overflow: "hidden",
+              position: "absolute",
+              bottom: "0%",
+              right: "5%",
+            }}
+          >
+            <Image
+              src={checks}
+              alt="wave Image"
+              style={{
+                width: "100%",
+                height: "100%",
+               
+              }}
+            />
+          </Box>
         </Box>
+       
       </Container>
     </Box>
   );

@@ -3,6 +3,7 @@ import { Box, Typography, Paper, Container, Grid } from '@mui/material';
 import Image from 'next/image';
 // import SpeakerPhoneIcon from '@mui/icons-material/SpeakerPhone';
 import speaker from "../../../../public/assest/homeRenovation/speaker.png"
+import cloud from "../../../../public/assest/homeRenovation/cloud.png"
 const TaxBenefits = () => {
   return (
     <Box
@@ -16,14 +17,9 @@ const TaxBenefits = () => {
    
       sx={{
         textAlign: 'center',
-      
-        // padding: '2rem 1rem',
-        minHeight: '100vh',
+        height:{xs:'60vh',lg:'70vh'},
         pt: { xs: 12, sm: 11, md: 12 },
-        // display: 'flex',
-        // flexDirection: 'column',
-        // alignItems: 'center',
-        // justifyContent: 'center',
+       
       }}
     >
       <Grid container sx={{display:'flex',flexDirection:'column',alignItems:'center'}}>
@@ -106,7 +102,29 @@ const TaxBenefits = () => {
           }}
         />
       </Box>
+
     </Container>
+    <Box
+        sx={{
+          width: "100%",
+          height: {xs:'10vh',sm:'20vh', md:'30vh'},
+          overflow: "hidden",
+          position: "relative",
+         
+        }}
+      >
+        <Image
+          src={cloud}
+          alt="wave Image"
+          style={{
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            bottom: "-60%",
+            left: 0,
+          }}
+        />
+      </Box>
     </Box>
   );
 };
