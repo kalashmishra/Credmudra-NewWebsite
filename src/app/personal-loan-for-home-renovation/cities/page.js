@@ -1,9 +1,5 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@mui/material";
-// import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
-// import BookIcon from '@mui/icons-material/Book';
-// import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
-
 import Image from "next/image";
 import bangluru from "../../../../public/assest/homeRenovation/bangluru.png";
 import mumbai from "../../../../public/assest/homeRenovation/mumbai.png";

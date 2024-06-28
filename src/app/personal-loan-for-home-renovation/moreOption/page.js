@@ -25,7 +25,7 @@ const MoreOption = () => {
       <Box
         sx={{
           textAlign: "center",
-          mt: { xs: 5, sm: 3, md: 9 },
+          mt: { xs: 3, sm: 3, md: 9 },
           mx: "auto",
         }}
       >

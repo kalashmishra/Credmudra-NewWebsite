@@ -17,8 +17,8 @@ const TaxBenefits = () => {
    
       sx={{
         textAlign: 'center',
-        height:{xs:'60vh',lg:'70vh'},
-        pt: { xs: 12, sm: 11, md: 12 },
+        height:{xs:'70vh',lg:'70vh'},
+        pt: { xs: 6, sm: 11, md: 12 },
        
       }}
     >
