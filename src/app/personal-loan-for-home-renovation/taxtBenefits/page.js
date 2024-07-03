@@ -17,7 +17,7 @@ const TaxBenefits = () => {
    
       sx={{
         textAlign: 'center',
-        height:{xs:'70vh',lg:'70vh'},
+        height:{xs:'70vh',sm:'85vh',md:'85vh',lg:'75vh'},
         pt: { xs: 6, sm: 11, md: 12 },
        
       }}
@@ -47,7 +47,7 @@ const TaxBenefits = () => {
           position: 'relative',
           marginX:"auto",
           padding: '2rem 1rem',
-          maxWidth: {xs:'230px', sm:'300px', md:'300px'},
+          maxWidth: {xs:'230px', sm:'280px', md:'300px'},
           backgroundColor: '#fff',
           textAlign: 'center',
           zIndex: 1,

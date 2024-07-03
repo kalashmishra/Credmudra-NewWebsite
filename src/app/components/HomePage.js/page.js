@@ -6,27 +6,27 @@ import icons_google from "../../../../public/assest/homeRenovation/icons_google.
 import BackgroundImage from "./BackgroundImage";
 import CommonButton from "@/app/components/CommonButton";
 
-const HomePage = () => {
+
+const HomePage = ({ heading, subheading, offerText, Animation }) => {
   return (
-   
     <Container
       maxWidth="100%"
       disableGutters
       sx={{
         p: 0,
-        m:0,
+        m: 0,
         position: "relative",
         zIndex: 9,
       }}
     >
-      <BackgroundImage>
+      <BackgroundImage Animation={Animation} >
         <Box
           sx={{
             textAlign: "center",
             mt: { xs: 5, sm: 3, md: 9 },
             maxWidth: { xs: "250px", sm: "580px", md: "670px" },
             mx: "auto",
-                   }}
+          }}
         >
           <Typography
             variant="h3"
@@ -38,23 +38,21 @@ const HomePage = () => {
               fontWeight: 700,
             }}
           >
-            Upgrade your space with Loan for Home Improvement!
+            {heading}
           </Typography>
           <Typography
             variant="body1"
-          
             color="textSecondary"
             gutterBottom
             sx={{
-              
               fontSize: { xs: ".8rem", sm: "1rem", md: "1.25rem" },
               mt: { xs: 2, sm: 3 },
             }}
           >
-            We've got it covered on all things renovation.
+            {subheading}
           </Typography>
           <Box sx={{ mt: { xs: 2, sm: 4 } }}>
-            <CommonButton  text={"Tansform Now"}/>
+            <CommonButton text={"Tansform Now"} />
           </Box>
           <Typography
             sx={{
@@ -63,7 +61,7 @@ const HomePage = () => {
               mt: "10px",
             }}
           >
-            Asian Paints Offer !!
+           {offerText}
           </Typography>
         </Box>
       </BackgroundImage>
@@ -74,8 +72,8 @@ const HomePage = () => {
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
-         
-          gap: 2, 
+
+          gap: 2,
         }}
       >
         <Image alt="Rating" src={star} width={"216px"} height={"32px"} />
@@ -117,7 +115,6 @@ const HomePage = () => {
         </Typography>
       </Box>
     </Container>
-   
   );
 };
 

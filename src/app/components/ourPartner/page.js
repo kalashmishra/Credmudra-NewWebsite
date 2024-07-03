@@ -16,7 +16,7 @@ const partners = [
   { name: "Zype", src: zype },
 ];
 
-const OurPartners = () => {
+const OurPartners = ({heading, subheading}) => {
   return (
     <Container maxWidth="lg" >
       <Box
@@ -34,7 +34,7 @@ const OurPartners = () => {
           sx={{ color: "#343435", fontWeight: "700", fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" },
         }}
         >
-          Get funded by our partners
+          {heading}
         </Typography>
         <Typography
           variant="body1"
@@ -47,7 +47,7 @@ const OurPartners = () => {
            
           }}
         >
-          The coolest partners in the game. Let's make financial moves together!
+          {subheading}
         </Typography>
      
       <Grid container spacing={2} justifyContent="center" mt={6}>

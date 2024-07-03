@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeRenovation from './personal-loan-for-home-renovation/page'
-import Animation from './personal-loan-for-home-renovation/creditScore/animation'
+import Animation from './components/creditScore/animation'
 
 
 const page = () => {

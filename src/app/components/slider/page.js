@@ -61,7 +61,7 @@ const testimonials = [
   },
 ];
 
-const SwiperComponent = () => {
+const SwiperComponent = ({heading}) => {
   useEffect(() => {
     new Swiper(".swiper", {
       direction: "horizontal",
@@ -111,8 +111,8 @@ const SwiperComponent = () => {
             }}
             gutterBottom
           >
-            Real talk: What our customers are saying
-          </Typography>
+           {heading}        
+             </Typography>
           <Box
             sx={{
               display: "flex",

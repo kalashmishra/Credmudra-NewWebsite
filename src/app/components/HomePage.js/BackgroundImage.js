@@ -1,16 +1,16 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
 
-import Animation from "./animation/page";
 
-const BackgroundImage = ({ children }) => {
+
+const BackgroundImage = ({ children, Animation }) => {
   return (
    
       <Box
         sx={{
           position: "relative",
           width: "100%",
-          height: { xs: "76vh", md: "160vh" },
+          height: { xs: "80vh",sm:'100vh', md: "130vh",lg:'175vh' },
           overflow: "hidden",
   
         }}
@@ -23,7 +23,7 @@ const BackgroundImage = ({ children }) => {
             left: 0,
             width: "100%",
             height: "100%",
-            mt: { xs: 25, sm: 10, md: 4 },
+            mt: { xs: 25, sm: 10, md: 4 ,lg:2},
           }}
         >
           <Animation />
