@@ -1,13 +1,16 @@
-import { Container, Box, Typography, Button } from "@mui/material";
+"use client"
+import { Container, Box, Typography} from "@mui/material";
 import Image from "next/image";
 import chill from "../../../../public/assest/homeRenovation/chill.svg";
 import star from "../../../../public/assest/homeRenovation/star.svg";
 import icons_google from "../../../../public/assest/homeRenovation/icons_google.svg";
+import CommonButton from "../CommonButton";
 import BackgroundImage from "./BackgroundImage";
-import CommonButton from "@/app/components/CommonButton";
 
 
-const HomePage = ({ heading, subheading, offerText, Animation }) => {
+
+const HomePage = ({ heading, subheading, offerText, animation }) => {
+  
   return (
     <Container
       maxWidth="100%"
@@ -19,7 +22,7 @@ const HomePage = ({ heading, subheading, offerText, Animation }) => {
         zIndex: 9,
       }}
     >
-      <BackgroundImage Animation={Animation} >
+      <BackgroundImage Animation={animation} >
         <Box
           sx={{
             textAlign: "center",

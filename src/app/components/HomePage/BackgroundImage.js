@@ -1,8 +1,5 @@
 import React from "react";
-import { Box, Grid } from "@mui/material";
-
-
-
+import { Box } from "@mui/material";
 const BackgroundImage = ({ children, Animation }) => {
   return (
    
@@ -26,7 +23,7 @@ const BackgroundImage = ({ children, Animation }) => {
             mt: { xs: 25, sm: 10, md: 4 ,lg:2},
           }}
         >
-          <Animation />
+               {Animation && <Animation />}
         </Box>
         <Box sx={{ position: "relative", zIndex: 1, width: "100%" }}>
           {children}

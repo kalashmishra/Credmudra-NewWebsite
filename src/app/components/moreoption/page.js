@@ -4,7 +4,7 @@ import { Container, Typography, Grid, Paper, Box } from "@mui/material";
 import Image from "next/image";
 import CommonButton from "@/app/components/CommonButton";
 
-const MoreOption = ({ options, heading, backgroundColor }) => {
+const MoreOption = ({ options=[], heading, backgroundColor }) => {
   return (
     <Box
       sx={{

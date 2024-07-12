@@ -47,7 +47,7 @@ const HomeLoan = () => {
         <Image
           src={Ladder}
           alt="Ladder Image"
-          layout="responsive"
+          // layout="responsive"
           width={"100%"}
           height={"100%"}
         />

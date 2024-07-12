@@ -1,10 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
-import Swiper, { Navigation, Pagination} from 'swiper';
+import Swiper from 'swiper';
 import "../../../../node_modules/swiper/css/swiper.css";
 import "./slider.css"
-import { mdiChevronLeft, mdiChevronRight } from '@mdi/js';
-import Icon from '@mdi/react';
 import star from "../../../../public/assest/homeRenovation/star.svg";
 import { Box, Card, CardContent, Container, Typography } from "@mui/material";
 import Image from "next/image";
@@ -65,14 +63,7 @@ const SwiperComponent = ({heading}) => {
   useEffect(() => {
     new Swiper(".swiper", {
       direction: "horizontal",
-      modules: [Navigation, Pagination,],
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: (index, className) => {
-          return `<span class="${className} custom-pagination-bullet"></span>`;
-        },
-      },
+      // modules: [Pagination],
       breakpoints: {
         1440: { slidesPerView: 3.5, spaceBetween: 50 },
         1220: { slidesPerView: 3.5, spaceBetween: 50 },
@@ -87,6 +78,14 @@ const SwiperComponent = ({heading}) => {
       //   nextEl: ".swiper-next",
       //   prevEl: ".swiper-prev",
       // },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: (index, className) => {
+          return `<span class="${className} custom-pagination-bullet"></span>`;
+        },
+      },
+     
      
     });
   }, []);

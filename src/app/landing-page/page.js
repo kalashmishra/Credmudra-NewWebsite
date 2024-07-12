@@ -1,11 +1,9 @@
 import React from "react";
-import HomePage from "../components/HomePage.js/page";
 import SlantedBanner from "../components/SlantedBanner";
 import OurPartners from "../components/ourPartner/page";
 import SwiperComponent from "../components/slider/page";
 import CreditScoreCheck from "../components/creditScore/page";
 import LoanComparison from "../components/loanComparison/page";
-import LandingPageAnimation from "../components/HomePage.js/LandingPageAnimation/page";
 import KeyFeatures from "../components/keyFeatures/page";
 import LoanHunt from "./loanHunt/page";
 import travel from "../../../public/assest/homeRenovation/travel.png";
@@ -14,10 +12,11 @@ import marriage from "../../../public/assest/homeRenovation/marriage.png";
 import subscription from "../../../public/assest/homeRenovation/subscription.png";
 import business from "../../../public/assest/homeRenovation/business.png";
 import bike from "../../../public/assest/homeRenovation/bike.png";
-import MoreOption from "../components/moreoption/page";
 import TreasureHuntSection from "./treasureHuntSection/page";
 import EMICalculator from "./emiCalculator/page";
-
+import MoreOption from "../components/moreoption/page";
+import HomePage from "../components/HomePage/page";
+import LandingPageAnimation from "../components/HomePage/LandingPageAnimation/page";
 
 const Landingpage = () => {
   const options = [
@@ -58,7 +57,7 @@ const Landingpage = () => {
       amount: "Upto ₹ 10 lakh",
     },
   ];
- 
+
   return (
     <>
       <HomePage
@@ -66,7 +65,7 @@ const Landingpage = () => {
         subheading="With Credmudra -Bharat ka loan search engine.
                     We’re here to make fund search a breeze."
         offerText="New year offer !!"
-        Animation={LandingPageAnimation}
+        animation={LandingPageAnimation}
       />
       <SlantedBanner />
       <OurPartners
@@ -78,16 +77,21 @@ const Landingpage = () => {
         heading="Find the best options for your desired loan"
         subheading="Check your eligibility from our partners."
         useBackgroundImage={false}
-        typographyColor = "#000" 
-        captionBackgroundColor = " #3B5BBA1A" captionTextColor = " #3B5BBA"
+        typographyColor="#000"
+        captionBackgroundColor=" #3B5BBA1A"
+        captionTextColor=" #3B5BBA"
       />
 
       <CreditScoreCheck />
-      <KeyFeatures   useBackgroundImage={true}  />
+      <KeyFeatures useBackgroundImage={true} />
       <LoanHunt />
-       <MoreOption options={options} heading='Your Funds, Your Time, Your Ways' backgroundColor={"linear-gradient(180deg, #ffffff 0%, #f0f4ff 100%)"}/>
-       <TreasureHuntSection />
-       <EMICalculator />
+      <MoreOption
+        options={options}
+        heading="Your Funds, Your Time, Your Ways"
+        backgroundColor={"linear-gradient(180deg, #ffffff 0%, #f0f4ff 100%)"}
+      />
+      <TreasureHuntSection />
+      <EMICalculator />
     </>
   );
 };
